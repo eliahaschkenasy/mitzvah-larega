@@ -4,7 +4,7 @@
 
 ## האתר החי
 
-[eliahaschkenasy.github.io/mitzvah-larega](https://eliahaschkenasy.github.io/mitzvah-larega/)
+[eliahaschkenasy.github.io/random-mitzvah](https://eliahaschkenasy.github.io/random-mitzvah/)
 
 ## הרצה מקומית
 

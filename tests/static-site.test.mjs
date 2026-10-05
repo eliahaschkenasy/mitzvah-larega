@@ -19,6 +19,10 @@ test("serves a Hebrew, RTL and accessible page from relative assets", async () =
   assert.match(html, /id="choose-button"/);
   assert.match(html, /aria-live="polite"/);
   assert.match(html, /<noscript>/);
+  assert.doesNotMatch(html, /מתוך 12 מצוות ומעשים טובים/);
+  assert.doesNotMatch(html, /לעשות טוב, רגע אחרי רגע/);
+  assert.doesNotMatch(html, /רגע אחד של כוונה/);
+  assert.doesNotMatch(html, /לחיצה אחת, רעיון אחד/);
   assert.doesNotMatch(html, /(?:src|href)="\//);
 });
 
