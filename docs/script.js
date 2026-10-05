@@ -117,7 +117,11 @@ function chooseMitzvah() {
       </div>
     </article>`;
 
-  resultArea.scrollIntoView({ behavior: "smooth", block: "center" });
+  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  resultArea.scrollIntoView({
+    behavior: reduceMotion ? "auto" : "smooth",
+    block: "center",
+  });
 }
 
 button.addEventListener("click", chooseMitzvah);
